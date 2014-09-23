@@ -1,4 +1,4 @@
-#= require activeadmin-wysihtml5/wysihtml5.min
+#= require activeadmin-wysihtml5/wysihtml5
 #= require activeadmin-wysihtml5/parser_rules
 #= require activeadmin-wysihtml5/fileuploader
 #= require activeadmin-wysihtml5/jquery.paginate.min
