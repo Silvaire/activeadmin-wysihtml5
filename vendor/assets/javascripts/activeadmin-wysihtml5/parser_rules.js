@@ -188,7 +188,6 @@ var wysihtml5ParserRules = {
       }
     },
     "figcaption": {
-      "rename_tag": "div"
     },
     "a": {
       "allow_attributes": [ "id", "target", "rel", "title", "href", "class" ]
