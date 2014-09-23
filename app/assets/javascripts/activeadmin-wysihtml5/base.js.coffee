@@ -41,7 +41,7 @@
 
       editor = new wysihtml5.Editor($textarea.attr('id'), {
         toolbar: $toolbar.attr('id'),
-        stylesheets: ["/assets/activeadmin-wysihtml5/wysiwyg.css", "<%= asset_path "wysiwyg_overrides.css" %>"],
+        stylesheets: ["/assets/activeadmin-wysihtml5/wysiwyg.css", "<%= asset_path 'wysiwyg_overrides.css' %>"],
         parserRules: wysihtml5ParserRules
       })
 
