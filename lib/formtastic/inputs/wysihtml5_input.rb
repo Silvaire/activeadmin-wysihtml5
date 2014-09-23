@@ -4,7 +4,7 @@ module Formtastic
 
       COMMANDS_PRESET = {
         barebone: [ :bold, :italic, :link, :source ],
-        basic: [ :bold, :italic, :ul, :ol, :link, :image, :source ],
+        basic: [ :bold, :italic, :ul, :ol, :link, :image, :source, :figcaption ],
         all: [ :bold, :italic, :underline, :ul, :ol, :outdent, :indent, :link, :image, :video, :source ]
       }
 
@@ -32,6 +32,14 @@ module Formtastic
           template.content_tag(:li) do
             template.content_tag(:div, class: "editor-command blocks-selector") do
               template.content_tag(:span, I18n.t("wysihtml5.block_style")) <<
+              template.content_tag(:ul) do
+                template.content_tag(:li) do
+                  template.content_tag(:a, 'figcaption', href: "javascript:void(0);", data: {
+                    wysihtml5_command: 'insertHTML'
+                    wysihtml5_command_value: '<figcaption>Image caption here</figcaption>'
+                  })
+                end
+              end
               template.content_tag(:ul) do
                 blocks.map do |block|
                   template.content_tag(:li) do
