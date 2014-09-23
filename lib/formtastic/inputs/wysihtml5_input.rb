@@ -10,8 +10,8 @@ module Formtastic
 
       BLOCKS_PRESET = {
         barebone: [ :p ],
-        basic: [ :h3, :h4, :h5, :p ],
-        all: [ :h1, :h2, :h3, :h4, :h5, :h6, :p ]
+        basic: [ :h3, :h4, :h5, :p, :figcaption ],
+        all: [ :h1, :h2, :h3, :h4, :h5, :h6, :p, :figcaption ]
       }
 
       HEIGHT_PRESET = {
