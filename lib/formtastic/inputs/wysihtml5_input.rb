@@ -34,9 +34,13 @@ module Formtastic
               template.content_tag(:span, I18n.t("wysihtml5.block_style")) <<
               template.content_tag(:ul) do
                 template.content_tag(:li) do
-                  template.content_tag(:a, 'figcaption', href: "javascript:void(0);", data: {
-                    wysihtml5_command: 'insertHTML'
-                    wysihtml5_command_value: '<figcaption>Image caption here</figcaption>'
+                  template.content_tag(
+                    :a,
+                    'figcaption',
+                    href: "javascript:void(0);",
+                    data: {
+                      wysihtml5_command: 'insertHTML',
+                      wysihtml5_command_value: '<figcaption>Image caption here</figcaption>'
                   })
                 end
               end
