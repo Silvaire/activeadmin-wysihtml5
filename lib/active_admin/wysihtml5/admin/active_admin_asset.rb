@@ -1,4 +1,4 @@
-ActiveAdmin.register Asset do
+ActiveAdmin.register ActiveAdminAsset do
 
   index as: :grid do |asset|
     link_to(image_tag(asset.storage.thumb("100x100#").url), admin_asset_path(asset))
