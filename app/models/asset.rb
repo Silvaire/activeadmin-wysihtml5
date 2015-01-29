@@ -1,4 +1,4 @@
-class Asset < ActiveRecord::Base
+class ActiveAdminAsset < ActiveRecord::Base
   image_accessor :storage
 
   def percentage_thumb_url(size)
