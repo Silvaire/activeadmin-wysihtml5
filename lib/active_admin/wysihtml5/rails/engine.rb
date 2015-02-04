@@ -9,6 +9,7 @@ module ActiveAdmin
             "activeadmin-wysihtml5/base.js",
             "activeadmin-wysihtml5/base.css",
             "activeadmin-wysihtml5/wysiwyg.css"
+            "activeadmin-wysihtml5/wysiwyg_overrides.css"
           ]
         end
 
