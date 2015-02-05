@@ -1,5 +1,7 @@
 ActiveAdmin.register ActiveAdminAsset do
 
+  menu label: "Media Library"
+
   index as: :grid do |active_admin_asset|
     link_to(image_tag(active_admin_asset.storage.thumb("100x100#").url), admin_active_admin_asset_path(active_admin_asset))
   end
